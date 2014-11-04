@@ -3,6 +3,7 @@ var express = require('express'),
  app = express();
 var wines = require("./routes/wines");
  
+app.use(bodyParser.urlencoded());
 
 app.get('/wines', wines.FindAll);
 app.get('/wines/:id', wines.FindbyId);
