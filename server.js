@@ -2,6 +2,12 @@ var express = require('express'),
   bodyParser = require('body-parser'), 
  app = express();
 var wines = require("./routes/wines");
+var passport = require('passport');
+var flash    = require('connect-flash');
+var morgan       = require('morgan');
+var cookieParser = require('cookie-parser');
+var session      = require('express-session');
+
  
 app.use(bodyParser.urlencoded());
 
