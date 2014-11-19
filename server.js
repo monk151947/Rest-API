@@ -17,5 +17,11 @@ app.post('/wines', wines.addWine);
 app.put('/wines/:id', wines.updateWine);
 app.delete('/wines/:id', wines.deleteWine)
 
+ app.get('/signup', function(req, res) {
+
+        // render the page and pass in any flash data if it exists
+        res.render('signup.ejs', { message: req.flash('signupMessage') });
+    });
+
 app.listen(3000);
 console.log("The application is running on 3000")
