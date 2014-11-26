@@ -23,7 +23,6 @@ app.delete('/wines/:id', wines.deleteWine)
         res.render('signup.ejs', { message: req.flash('signupMessage') });
     });
 
-#running application
-
+ 
 app.listen(3000);
 console.log("The application is running on 3000")

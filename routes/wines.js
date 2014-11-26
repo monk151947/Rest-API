@@ -1,6 +1,6 @@
 #Wine management
 var mongo = require('mongodb');
-#server setup
+
 var Server = mongo.Server,
     Db = mongo.Db,
     BSON = mongo.BSONPure;
